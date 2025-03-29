@@ -1,44 +1,32 @@
-## Go Project Template
+## C Project Template
 
 <div align="center">
   <picture>
-    <img alt="Template Go Project Logo" src="assets/logo-v1.svg" height="35%" width="35%">
+    <img alt="C Logo" src="logo.svg" height="25%" width="25%">
   </picture>
 </div>
 <br>
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=tests&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
-[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=lints&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
-[![Linux Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_linux.yml?label=linux%20build&style=flat&labelColor=282c34&color=4caf50&logo=linux)](https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml)
-[![Windows Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_windows.yml?label=windows%20build&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml)
-[![MacOS Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_macos.yml?label=macos%20build&style=flat&labelColor=282c34&color=4caf50&logo=apple)](https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml)
-<br>
-[![Go Version](https://img.shields.io/github/go-mod/go-version/habedi/template-go-project?label=min%20go%20version&style=flat&labelColor=282c34&color=007ec6&logo=go)](go.mod)
-[![Go Report Card](https://img.shields.io/badge/Go%20Report-Check-007ec6?label=go%20report%20card&style=flat&labelColor=282c34&logo=go)](https://goreportcard.com/report/github.com/habedi/template-go-project)
-[![Go Reference](https://img.shields.io/badge/Go%20Reference-Docs-007ec6?label=go%20reference&style=flat&labelColor=282c34&logo=go)](https://pkg.go.dev/github.com/habedi/template-go-project)
-[![Release](https://img.shields.io/github/release/habedi/template-go-project.svg?label=release&style=flat&labelColor=282c34&color=f46623&logo=github)](https://github.com/habedi/template-go-project/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/habedi/template-go-project/total.svg?label=downloads&style=flat&labelColor=282c34&color=8caf50&logo=github)](https://github.com/habedi/template-go-project/releases)
-<br>
-[![Code Coverage](https://img.shields.io/codecov/c/github/habedi/template-go-project?label=coverage&style=flat&labelColor=282c34&color=ffca28&logo=codecov)](https://codecov.io/gh/habedi/template-go-project)
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/habedi/template-go-project?label=code%20quality&style=flat&labelColor=282c34&color=4caf50&logo=codefactor)](https://www.codefactor.io/repository/github/habedi/template-go-project)
+[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-c-project/tests.yml?label=tests&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-c-project/actions/workflows/tests.yml)
+[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-c-project/lints.yml?label=lints&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-c-project/actions/workflows/lints.yml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/habedi/template-c-project?label=coverage&style=flat&labelColor=282c34&logo=codecov)](https://codecov.io/gh/habedi/template-c-project)
+[![CodeFactor](https://img.shields.io/codefactor/grade/github/habedi/template-c-project?label=code%20quality&style=flat&labelColor=282c34&logo=codefactor)](https://www.codefactor.io/repository/github/habedi/template-c-project)
 [![Docs](https://img.shields.io/badge/docs-latest-007ec6?label=docs&style=flat&labelColor=282c34&logo=readthedocs)](docs)
-[![License](https://img.shields.io/badge/license-MIT-007ec6?label=license&style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-go-project)
+[![License](https://img.shields.io/badge/license-MIT-007ec6?label=license&style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-c-project)
+[![Release](https://img.shields.io/github/release/habedi/template-c-project.svg?label=release&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-c-project/releases/latest)
 
-This is a generic project template for Go projects.
+This is a project template for C projects.
 It provides a minimalistic project structure with pre-configured GitHub Actions, Makefile,
-and example configuration files for a few popular development tools.
-It is inspired by the recommendations
-in [golang-standards/project-layout](https://github.com/golang-standards/project-layout).
+and configuration files for a few popular development tools.
 I share it here in case it might be useful to others.
 
 ### Features
 
 - Minimalistic project structure
-- Pre-configured GitHub Actions for testing, building the binaries, and linting
-- Makefile for managing the development workflow and tasks like formatting, testing, linting, etc.
-- Example configuration files for popular tools like `golangci-lint`
-- GitHub badges for tests, builds, code quality and coverage, documentation, etc.
-- GitHub release workflow for creating releases and publishing binaries
+- Pre-configured GitHub Actions for linting and testing
+- Makefile for managing the development workflow and tasks like code formatting, testing, linting, etc.
+- Example configuration files for popular tools like `clang-format`, `clang-tidy`, `Doxygen`, and `valgrind`.
+- GitHub badges for tests, code quality and coverage, documentation, etc.
 - [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md)
 
 ### Getting Started
@@ -46,14 +34,21 @@ I share it here in case it might be useful to others.
 Check out the [Makefile](Makefile) for available commands to manage the development workflow of the project.
 
 ```shell
-# Install system dependencies (Go and GNU Make)
-sudo apt install golang-go make
+# Install system and development dependencies (for Debian-based systems)
+sudo apt-get install make
+make install-deps
 ```
 
 ```shell
 # See all available commands and their descriptions
 make help
 ```
+
+### Platform Compatibility
+
+This template should work on most Unix-like environments (like GNU/Linux distributions, BSDs, and macOS),
+albeit with some minor modifications.
+Windows users might need a Unix-like environment (such as WSL, MSYS2, or Cygwin) to use this template.
 
 ### Contributing
 

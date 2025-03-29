@@ -1,23 +1,25 @@
-# Python specific
+########################
+# Python Specific
+########################
 __pycache__/
 *.py[cod]
 *$py.class
 
 # Virtual environments
 .env/
-env/
 .venv/
+env/
 venv/
 
-# Packaging and distribution files
+# Packaging
 .Python
-build/
-dist/
-*.egg-info/
 *.egg
+*.egg-info/
+dist/
+build/
 MANIFEST
 
-# Dependency directories
+# Python Dependency tools
 develop-eggs/
 downloads/
 eggs/
@@ -30,8 +32,7 @@ var/
 wheels/
 .installed.cfg
 
-# Test and coverage reports
-htmlcov/
+# Python Test & Coverage
 .tox/
 .coverage
 .coverage.*
@@ -41,44 +42,101 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+htmlcov/
 
-# IDE specific files and directories
+# Jupyter
+.ipynb_checkpoints
+
+########################
+# C / C++ Specific
+########################
+
+# Build artifacts
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.out
+*.elf
+
+# CMake / Make / Autotools
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+makefile
+configure
+config.log
+config.status
+aclocal.m4
+autom4te.cache/
+compile
+install-sh
+ltmain.sh
+missing
+
+# Debug & Profiling
+*.dSYM/
+*.stackdump
+*.core
+core
+*.gcno
+*.gcda
+*.gcov
+*.profraw
+*.profdata
+
+# Test & Coverage
+coverage/
+coverage.*
+test-results/
+
+########################
+# IDE / Editor Junk
+########################
 .idea/
 *.iml
 .vscode/
-
-# Jupyter Notebook files
-.ipynb_checkpoints
-
-# Temporary files created by editors and the system and folders to ignore
 *.swp
 *~
 *.bak
 *.tmp
-temp/
+*.log
+tags
+
+########################
+# Miscellaneous
+########################
+
+# Distribution
+bin/
+obj/
 tmp/
+temp/
 
-# Database files (SQLite, DuckDB, etc.)
-*.duckdb
+# System / misc
+.DS_Store
+*.patch
+*.orig
+*.dump
+
+# Local databases
 *.db
-*.wal
 *.sqlite
+*.wal
+*.duckdb
 
-# Dependency lock files (uncomment to ignore)
+# Dependency lock files (optional)
 poetry.lock
 
-# Golang specific
-*.out
-*.test
-*.prof
-*.exe
-coverage.txt
-coverage.out
-coverage.html
-#go.sum
-
-# Miscellaneous files and directories to ignore
-# Add any additional file patterns a directory names that should be ignored down here
-*.log
-bin/
-template-go-project
+# Additional files and directories to ignore (put below)
+docs/html
+docs/latex
+target

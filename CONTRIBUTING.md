@@ -5,17 +5,17 @@ Contributions are always welcome and appreciated.
 
 ## How to Contribute
 
-Please check the [issue tracker](https://github.com/habedi/template-go-project/issues) to see if there is an issue you
+Please check the [issue tracker](https://github.com/habedi/template-c-project/issues) to see if there is an issue you
 would like to work on or if it has already been resolved.
 
 ### Reporting Bugs
 
-1. Open an issue on the [issue tracker](https://github.com/habedi/template-go-project/issues).
+1. Open an issue on the [issue tracker](https://github.com/habedi/template-c-project/issues).
 2. Include information such as steps to reproduce, expected/actual behavior, and relevant logs or screenshots.
 
 ### Suggesting Features
 
-1. Open an issue on the [issue tracker](https://github.com/habedi/template-go-project/issues).
+1. Open an issue on the [issue tracker](https://github.com/habedi/template-c-project/issues).
 2. Provide details about the feature, its purpose, and potential implementation ideas.
 
 ## Submitting Pull Requests
@@ -30,10 +30,11 @@ would like to work on or if it has already been resolved.
 
 ### Prerequisites
 
-Install system dependencies (Go and GNU Make).
+Install GNU Make on your system if it's not already installed.
 
 ```shell
-sudo apt install golang-go make
+# For Debian-based systems like Debian, Ubuntu, etc.
+sudo apt-get install make
 ```
 
 - Use the `make install-deps` command to install the development dependencies.
@@ -56,4 +57,4 @@ sudo apt install golang-go make
 
 ## Code of Conduct
 
-We adhere to the [Go Community Code of Conduct](https://go.dev/conduct).
+We adhere to the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) version 2.1.
