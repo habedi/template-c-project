@@ -56,7 +56,8 @@ $(BIN_DIR) $(TARGET_DIR) $(LIB_DIR):
 
 .PHONY: help
 help: ## Show help message for each target (try: make -j4 help for parallel build suggestion)
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; \
+ 	{printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: all
 all: build static shared ## Build everything
@@ -141,8 +142,8 @@ lint: ## Run cppcheck and clang-tidy
 		echo "clang-tidy not found. Skipping."; \
 	fi
 
-.PHONY: docs
-docs: ## Generate docs with Doxygen
+.PHONY: doc
+doc: ## Generate documentation with Doxygen
 	@echo "Generating documentation..."
 	doxygen Doxyfile
 
