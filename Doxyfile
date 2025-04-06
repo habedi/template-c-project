@@ -5,7 +5,7 @@
 # Project related settings
 #---------------------------------------------------------------------------
 PROJECT_NAME       = "My Project"
-OUTPUT_DIRECTORY   = docs
+OUTPUT_DIRECTORY   = doc
 CREATE_SUBDIRS     = NO
 
 #---------------------------------------------------------------------------

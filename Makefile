@@ -25,7 +25,7 @@ TEST_DIR  := test
 BIN_DIR   := bin
 LIB_DIR   := lib
 TARGET_DIR:= obj
-DOC_DIR   := docs
+DOC_DIR   := doc
 
 # Names and Files
 BINARY_NAME   := main
